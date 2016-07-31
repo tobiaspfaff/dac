@@ -3,4 +3,8 @@
 
 void ERROR(const char* msg);
 
+inline double clamp(double x, double xmin, double xmax) {
+	return (x < xmin) ? xmin : ( (x>xmax) ? xmax : x );
+}
+
 #endif
